@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang=\"ja\">
+  <head>
+    <meta charset=\"utf-8\" />
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+    <title>Onboarding トライアル | デモサイト</title>
+    <meta name=\"description\" content=\"オンボーディング・トライアルを検証するための最小構成の GitHub Pages サイト\" />
+    <link rel=\"stylesheet\" href=\"assets/styles.css\" />
+  </head>
+  <body>
+    <header class=\"site-header\">
+      <h1>Onboarding トライアル（デモ）</h1>
+      <p>このページは GitHub Pages 上で「オンボーディング」体験を簡単に試すためのテンプレートです。</p>
+    </header>
+
+    <main>
+      <section class=\"card\">
+        <h2>使い方（概要）</h2>
+        <ol>
+          <li>このテンプレートをリポジトリに配置して GitHub Pages を有効化します。</li>
+          <li>下の <strong>埋め込みスニペット</strong> のコメント位置に、あなたが試したいオンボーディングの SDK/スクリプトを貼り付けます。</li>
+          <li>コミット＆プッシュ後、公開 URL を開いて挙動を確認します。</li>
+        </ol>
+      </section>
+
+      <section class=\"card\">
+        <h2>埋め込みスニペット</h2>
+        <p>
+          以下のプレースホルダーに、提供されたトライアル用のコード（例：&lt;script&gt; ... &lt;/script&gt;、ウィジェット、iframe 等）を挿入してください。
+        </p>
+        <div id=\"onboarding-placeholder\" class=\"placeholder\">
+          <!-- 👇 ここにオンボーディング・トライアルのコードを貼り付けてください。 -->
+          <!-- 例:
+          <script src=\"https://example.com/onboarding-sdk.js\"></script>
+          <script>
+            Onboarding.init({
+              apiKey: 'YOUR_KEY',
+              container: '#onboarding-placeholder',
+              steps: [
+                { selector: '#cta', title: 'はじめましょう', content: 'このボタンから体験を開始します。' }
+              ]
+            });
+          </script>
+          -->
+        </div>
+      </section>
+
+      <section class=\"card\">
+        <h2>CTA（動作確認用）</h2>
+        <p>オンボーディングの開始トリガーとして利用できるボタンです。</p>
+        <button id=\"cta\" class=\"primary\">オンボーディングを開始</button>
+      </section>
+
+      <section class=\"card\">
+        <h2>デバッグ情報</h2>
+        <pre id=\"debug\" class=\"debug\"></pre>
+      </section>
+    </main>
+
+    <footer class=\"site-footer\">© 2025 Onboarding Demo</footer>
+
+    <script src=\"assets/script.js\"></script>
+  </body>
+</html>
